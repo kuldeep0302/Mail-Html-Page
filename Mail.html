@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order report mail attachment</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: #244a9e;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 8px;
+        }
+
+        tr {
+            border-bottom: 1px solid grey;
+        }
+
+        tr:last-child {
+            border-bottom: 0;
+        }
+
+        tr:nth-child(4) {
+            border-bottom: 0;
+        }
+
+        .First_heading {
+            text-align: left;
+            font-size: x-small;
+            margin: 63px;
+            margin-bottom: 0;
+        }
+
+        .last_heading {
+            text-align: left;
+            font-size: x-small;
+            margin: 63px;
+            margin-top: 0;
+        }
+
+        .greetingText {
+            font-size: 20px;
+        }
+
+        .order_report {
+            /* float: right; */
+            padding: 0;
+            /* margin: 18px; */
+            width: 100%;
+            text-align: right;
+        }
+
+        /* .inner_order_report{
+    float: right;
+} */
+        .table_border {
+            border: 1px solid black;
+            margin: 51px;
+            padding: 31px;
+            margin-top: 30px;
+        }
+
+        .order_from_to {
+            width: 100%;
+        }
+
+        .order_detail {
+            /* display: flex; */
+        }
+
+        .order_from {
+            width: 50%;
+            float: left;
+        }
+
+        .order_right {
+            width: 50%;
+            float: left;
+        }
+
+        .Footer_logo {
+            /* text-align: center; */
+            /* display: flex;
+            align-items: center;
+            color: #32499F; */
+            text-align: center;
+            margin-left: 361px;
+
+
+        }
+
+        .Footer_logo img {
+            align-items: center;
+            height: 50px;
+            margin-right: 469px;
+            /* display: block; */
+            /* margin-left: auto;
+            margin-right: auto; */
+        }  
+
+        .Footer_logo p {
+            /* font-size: 18px;
+            width: 61px;
+            height: 36px;
+            margin-right: 473px; */
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .powered_by {
+            margin: auto;
+            font-weight: bold;
+            margin-right: 5px;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .inner_order_report img {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="First_heading">
+            <h2 class="greetingText">
+                Greeting,
+                <br>
+                The Following Order has been placed
+            </h2>
+        </div>
+
+
+
+        <div class="table_border">
+
+            <div class="order_report">
+                <div class="inner_order_report">
+                    <img src="https://qa.zed-axis.com/DMSsfa_qa/Assets/NuralSales/CSS/Images/savexlogo.png" <h1>Order
+                    Report</h1>
+                    <p> Order Date: 26/04/2023</p>
+                    <p>Order Number# 2022-23/RetailerCode/5 digit running sequence</p>
+                </div>
+            </div>
+
+
+            <div class="order_from_to">
+                <div class="order_detail">
+                    <div class="order_from">
+                        <caption>
+                            <h2>Order From:</h2>
+                            <p>Retailer Name: !!~Retailer name~!!<br>
+                                Retailer Code: !!~Retailer code <code></code>~!!<br>
+                                Retailer Address: !!~Retailer Address~!!
+                            </p>
+                            <p>
+                                <!-- Order Date: 26/04/2023<br> -->
+                                <!-- Order No: xxxxxxx</p> -->
+
+                                <!-- Add more order details as needed -->
+                        </caption>
+                    </div>
+                    <div class="order_to">
+                        <caption>
+                            <h2>Order To:</h2>
+                            <p>Distributor Name: !!~Distributor Name~!!<br>
+                                Distributor Code: !!~Distributor Code~!!</p>
+
+
+                            <!-- Add more order details as needed -->
+                        </caption>
+                    </div>
+                </Div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.NO.</th>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>SKU01</td>
+                            <td>8mm Glass</td>
+                            <td>10</td>
+                            <td>200</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>SKU02</td>
+                            <td>10mm Glass</td>
+                            <td>5</td>
+                            <td>500</td>
+                            <td>2500</td>
+                        </tr>
+
+                        <tr>
+                            <td>3.</td>
+                            <td>SKU03</td>
+                            <td>15mm Glass</td>
+                            <td>5</td>
+                            <td>400</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td>Total Quantity</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td>Total Amount</td>
+                            <td>6500</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="line">
+                <b>
+                    Amount in Words:
+                </b>
+                <span>
+                    Six Thousand Five Hundread Only
+                </span>
+            </p>
+
+            <div class="Footer_logo">
+                <p><span class="powered_by">
+                        Powered By
+                        <img src="https://nuraltech.com/wp-content/uploads/2023/01/Logo-Color-Alpha2-scaled.webp"
+                            alt="">
+                    </span>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="last_heading">
+            <h2 class="greetingText">
+                Kindly arrange to dispatch the same
+            </h2>
+
+            <h2 class="greetingText">
+                Regards:
+                <br>
+                (Retailer Name)
+            </h2>
+        </div>
+    </div>
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
